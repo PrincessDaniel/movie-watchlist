@@ -358,7 +358,7 @@ input {
 }
 
 @media(min-width: 798px) {
-    body {
+    html, body {
         width: 100%;
     }
     
