@@ -18,7 +18,7 @@ body {
     min-height: 779px;
     height: auto;
     background-color: #121212;
-    margin: 20px;
+    margin: 0 auto;
     color: #FFFFFF;
     opacity: 1;
     font-family: "Inter", sans-serif;
@@ -96,6 +96,13 @@ header::before {
     letter-spacing: 0%;
     justify-content: space-between;
     margin-right: 20px;
+}
+
+#movies-placeholder,
+#watchlist-main {
+    width: 100%;
+    max-width: 550px;
+    margin: 0 auto;
 }
 
 
@@ -357,13 +364,47 @@ input {
     fill: #FEC654;
 }
 
-@media(min-width: 798px) {
-    html, body {
+@media (max-width: 600px) {
+
+    body {
+        width: 100%;
+        min-height: 100vh;
+        margin: 0;
+    }
+
+    header {
         width: 100%;
     }
-    
+
+    main {
+        padding-top: 211px; /* keep your layout spacing */
+    }
+
+    .movie-list-container {
+        width: 100%;
+        padding: 0 16px;
+        box-sizing: border-box;
+    }
+
+    .movie-details {
+        width: 100%;
+    }
+
+    .movie-plot {
+        width: 100%;
+        padding-right: 0;
+    }
+
     form {
-        position: absolute;
-        margin-left: 44px;
+        padding: 0 16px;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    #search-btn {
+        width: auto;
+        min-width: 100px;
     }
 }
