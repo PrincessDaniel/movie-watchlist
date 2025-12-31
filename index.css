@@ -356,3 +356,14 @@ input {
 .star-icon path {
     fill: #FEC654;
 }
+
+@media(min-width: 798px) {
+    body {
+        width: 100%;
+    }
+    
+    form {
+        position: absolute;
+        margin-left: 44px;
+    }
+}
