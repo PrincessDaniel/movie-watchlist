@@ -385,11 +385,16 @@ input {
     main {
         padding-top: 211px; /* keep your layout spacing */
     }
+    
+    #watchlist-body {
+        width: 100%;
+        max-width: 100vw;
+    }
 
     .movie-list-container {
-        width: 100%;
+        width: 120%;
         padding: 0 16px;
-        box-sizing: border-box;
+        margin-left: -30px;
     }
 
     .movie-details {
@@ -420,6 +425,10 @@ input {
     
     nav a {
         font-size: 12px;
+    }
+    
+    .movie-watch {
+        gap: 10px;
     }
     
     #movies-placeholder {
