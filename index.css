@@ -14,14 +14,14 @@ html {
 }
 
 body {
-    width: 550px;
-    min-height: 779px;
     height: auto;
-    background-color: #121212;
-    margin: 0 auto;
+    margin: 0;
     color: #FFFFFF;
     opacity: 1;
     font-family: "Inter", sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #121212;
 }
 
 main{
@@ -55,6 +55,11 @@ header::before {
     
     /* Ensure the background layer is behind the main content */
     z-index: -1; 
+}
+
+.page-container {
+    max-width: 550px;
+    margin: 0 auto;
 }
 
 #more-movies {
@@ -100,8 +105,7 @@ header::before {
 
 #movies-placeholder,
 #watchlist-main {
-    width: 100%;
-    max-width: 550px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -379,7 +383,6 @@ input {
     }
 
     main {
-        padding: 0;
         padding-top: 211px; /* keep your layout spacing */
     }
 
@@ -419,10 +422,13 @@ input {
         font-size: 12px;
     }
     
-    #movies-placeholder,
-    #watchlist-main {
+    #movies-placeholder {
         width: 100%;
-        max-width: 100%;
-        margin: 0;
+        padding: 0 16px; /* same as form */
+        box-sizing: border-box;
+    }
+
+    .not-available-text {
+        width: 100%;
     }
 }
