@@ -20,7 +20,7 @@ if(searchForm) {
         
         html = ""
         
-        const response = await fetch(`https://www.omdbapi.com/?s=${searchInput.value}&apikey=649114e2`)
+        const response = await fetch(`https://www.omdbapi.com/?s=${searchInput.value.trim()}&apikey=649114e2`)
         const data = await response.json()
         
         if(data.Response === "True") {
