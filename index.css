@@ -379,6 +379,7 @@ input {
     }
 
     main {
+        padding: 0;
         padding-top: 211px; /* keep your layout spacing */
     }
 
@@ -416,5 +417,12 @@ input {
     
     nav a {
         font-size: 12px;
+    }
+    
+    #movies-placeholder,
+    #watchlist-main {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
     }
 }
